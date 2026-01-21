@@ -308,10 +308,11 @@ img {
    Desktop Layout
 ===================== */
 @media (min-width: 768px) {
-  .home__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
+.home__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  padding-top: 3rem;
+}
 
   .home__img {
     justify-content: flex-end;
