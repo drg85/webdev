@@ -330,10 +330,12 @@ img {
 }
 
 .home__img img {
-  width: 240px;
+  width: 100%;         /* fills the container horizontally */
+  height: auto;        /* preserves aspect ratio */
+  max-width: 400px;    /* optional: caps width on large screens */
+  object-fit: contain; /* keeps entire image visible without cropping */
   filter: drop-shadow(1rem 0.8rem 2rem rgba(7, 7, 7, 0.76));
 }
-
 .contact__inputs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
