@@ -324,9 +324,11 @@ img {
 
   /* Fix image "squash" on desktop */
   .home__img img {
-    width: auto;
+    width: 100%;
     max-width: 380px;
+    height: auto;
   }
+   
 
   .services__container {
     grid-template-columns: repeat(2, 1fr);
