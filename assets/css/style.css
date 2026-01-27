@@ -547,7 +547,7 @@ img {
 @media (min-width: 506px) {
   .home__img img {
     width: 300px;
-    height: 400px;
+   height: auto;
   }
   .home__container,
   .services__container {
@@ -622,7 +622,7 @@ img {
   }
   .home__img img {
     width: 380px;
-    height: 700px;
+    height: auto;
   }
   .services__container {
     display: grid;
