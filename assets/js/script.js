@@ -79,15 +79,15 @@ function scrollHeader() {
 window.addEventListener("scroll", scrollHeader);
 
 /* =========================
-   Swiper JS
+   Swiper JS – single-slide carousel
 ========================= */
 const swiperEl = document.querySelector(".swiper");
 
 if (swiperEl) {
   new Swiper(".swiper", {
     slidesPerView: 1,
-    spaceBetween: 16,
-    loop: false,
+    spaceBetween: 24,
+    loop: true,
     grabCursor: true,
 
     pagination: {
@@ -95,13 +95,7 @@ if (swiperEl) {
       clickable: true,
     },
 
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
+    // optional but nice
+    speed: 600,
   });
 }
